@@ -24,7 +24,7 @@ Specifically, we need two things:
 2. We need to make it so the cookie value can't be modified by the user.
 
 For the first point, we can configure the cookie to make it inaccessible to
-client-side JavaScript. For the second point, we can't prevent user's from
+client-side JavaScript. For the second point, we can't prevent users from
 changing their cookies, but we can make it so we don't recognize the cookie if
 they do. We can use a cryptographic hash function to sign the cookie value. This
 way, if the user modifies the cookie value, the signature will no longer match
